@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.util.Random;
+public class H{
+	public static void main(String[] args){
+		int b = 11;
+		Scanner in = new Scanner(System.in);
+		Random s = new Random();
+		int a = s.nextInt(10);
+		while(b != a){
+		System.out.println("请你输入0-10其中一个数字：");
+		b = in.nextInt();
+		if(b > a){
+			System.out.println("猜大了");
+		}
+		else if(b < a){
+			System.out.println("猜小了");
+		}
+		else{
+			System.out.println("对了！");
+			break;
+		}
+	}
+	}
+}
